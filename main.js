@@ -78,127 +78,127 @@ new Waypoint({
   offset: "80%",
 });
 
-let menuLists = [
-  {
-    id: 1,
-    img: "public/img/plate1.png",
-    title: "Barbecue Salad",
-    description: "Special Delicious Dish",
-    price: 22.2,
-    currency: "$",
-  },
-  {
-    id: 2,
-    img: "public/img/plate2.png",
-    title: "Salad with fish",
-    description: "Special Delicious Dish",
-    price: 30.5,
-    currency: "$",
-  },
-  {
-    id: 3,
-    img: "public/img/plate3.png",
-    title: "Spinach Salad",
-    description: "Special Delicious Dish",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 4,
-    img: "public/img/plate1.png",
-    title: "San Kyi Tar",
-    description: "Special Delicious Dish",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 5,
-    img: "public/img/plate2.png",
-    title: "San Food",
-    description: "Special Delicious Dish",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 6,
-    img: "public/img/plate3.png",
-    title: "Kyi Food",
-    description: "Special Delicious Dish",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 7,
-    img: "public/img/plate2.png",
-    title: "Tar Food",
-    description: "Dish",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 8,
-    img: "public/img/plate1.png",
-    title: "San w Food",
-    description: "Special Delicious ",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 9,
-    img: "public/img/plate3.png",
-    title: "San w Food",
-    description: "Special Delicious ",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 10,
-    img: "public/img/plate2.png",
-    title: "San w Food",
-    description: "Special Delicious ",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 11,
-    img: "public/img/plate1.png",
-    title: "San w Food",
-    description: "Special Delicious ",
-    price: 50,
-    currency: "$",
-  },
-  {
-    id: 12,
-    img: "public/img/plate3.png",
-    title: "San w Food",
-    description: "Special Delicious ",
-    price: 50,
-    currency: "$",
-  },
-];
+// let menuLists = [
+//   {
+//     id: 1,
+//     img: "public/img/plate1.png",
+//     title: "Barbecue Salad",
+//     description: "Special Delicious Dish",
+//     price: 22.2,
+//     currency: "$",
+//   },
+//   {
+//     id: 2,
+//     img: "public/img/plate2.png",
+//     title: "Salad with fish",
+//     description: "Special Delicious Dish",
+//     price: 30.5,
+//     currency: "$",
+//   },
+//   {
+//     id: 3,
+//     img: "public/img/plate3.png",
+//     title: "Spinach Salad",
+//     description: "Special Delicious Dish",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 4,
+//     img: "public/img/plate1.png",
+//     title: "San Kyi Tar",
+//     description: "Special Delicious Dish",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 5,
+//     img: "public/img/plate2.png",
+//     title: "San Food",
+//     description: "Special Delicious Dish",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 6,
+//     img: "public/img/plate3.png",
+//     title: "Kyi Food",
+//     description: "Special Delicious Dish",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 7,
+//     img: "public/img/plate2.png",
+//     title: "Tar Food",
+//     description: "Dish",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 8,
+//     img: "public/img/plate1.png",
+//     title: "San w Food",
+//     description: "Special Delicious ",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 9,
+//     img: "public/img/plate3.png",
+//     title: "San w Food",
+//     description: "Special Delicious ",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 10,
+//     img: "public/img/plate2.png",
+//     title: "San w Food",
+//     description: "Special Delicious ",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 11,
+//     img: "public/img/plate1.png",
+//     title: "San w Food",
+//     description: "Special Delicious ",
+//     price: 50,
+//     currency: "$",
+//   },
+//   {
+//     id: 12,
+//     img: "public/img/plate3.png",
+//     title: "San w Food",
+//     description: "Special Delicious ",
+//     price: 50,
+//     currency: "$",
+//   },
+// ];
 
-let menuRow = document.getElementById("menuRow");
+// let menuRow = document.getElementById("menuRow");
 
-menuLists.forEach(function (menuList) {
-  let div = document.createElement("div");
-  div.classList.add("col-8", "col-md-4", "col-lg-2");
-  div.innerHTML = `
-        <div class="card plate-card mb-5 ">
-            <img src="${menuList.img}" class="w-75 mx-auto d-block my-4" alt="">
-            <div class="card-body">
-                <p class="fw-bold">${menuList.title}</p>
-                <p class="text-black-50 small">
-                    ${menuList.description}
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <p class="mb-0">${menuList.currency} ${menuList.price}</p>
-                    <button class="btn btn-primary">
-                        <i class="bi bi-cart-plus"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    `;
+// menuLists.forEach(function (menuList) {
+//   let div = document.createElement("div");
+//   div.classList.add("col-8", "col-md-4", "col-lg-2");
+//   div.innerHTML = `
+//         <div class="card plate-card mb-5 ">
+//             <img src="${menuList.img}" class="w-75 mx-auto d-block my-4" alt="">
+//             <div class="card-body">
+//                 <p class="fw-bold">${menuList.title}</p>
+//                 <p class="text-black-50 small">
+//                     ${menuList.description}
+//                 </p>
+//                 <div class="d-flex justify-content-between align-items-center">
+//                     <p class="mb-0">${menuList.currency} ${menuList.price}</p>
+//                     <button class="btn btn-primary">
+//                         <i class="bi bi-cart-plus"></i>
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     `;
 
-  menuRow.append(div);
-});
+//   menuRow.append(div);
+// });
